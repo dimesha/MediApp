@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet,Alert } from 'react-native';
+import {
+  Container,
+  Content,
+} from "native-base";
+
 import LinearGradient from 'react-native-linear-gradient';
 export default class SideScreen extends Component {
+  playstore(){
+  Alert.alert("working!!!")
+}
+aboutus(){
+this.props.navigation.navigate('Aboutus')
+}
     render() {
 
         return (
            
-        // <ImageBackground
-        //     source={require("../mainScreen/assets/sidescreenimg.jpg")}
-        //     style={{ width: "100%", height: "100%" }}>
-        // </ImageBackground>
+    
        
         <LinearGradient
         colors={['#fff3e0','#ff6f00', '#ffc107','#ffd54f']}
@@ -18,7 +26,74 @@ export default class SideScreen extends Component {
         end={{ x: 1, y: 1 }}
       >
          
-        <Text style={styles.text}>Hello There</Text>
+         <Container  style={{backgroundColor:'transparent'}}>
+                {/* <Content > */}
+                    <View style={{top:10}}>
+                    <Image
+                        
+                        style={{ height: 200,
+                          width: 200,
+                          position: "absolute",
+                          alignSelf: "center",
+                          justifyContent:"center",}}
+                        source={require
+                            (
+                                '../mainScreen/assets/meditationlogo.png'
+                            )}
+                    />
+                               <Text style={{ fontSize:30,color:"white" ,fontFamily:'AmericanTypewriter-Condensed',top:200,textAlign:"center"}}> Meditation</Text>
+
+                    </View>
+
+                    
+
+                    <View style={{top:250}}>
+                        <TouchableOpacity onPress={() => this.aboutus()}>
+                            <View>
+                                <View>
+                                    <Text style={{position:"absolute",left:80,top:10,fontSize:22,color:"white"}}>
+                                        About Us
+                                </Text>
+                                    <Image
+                                        style={{ width: 30,
+                                          height: 30,margin:10
+                                          }}
+                                        source={require
+                                            (
+                                                '../mainScreen/assets/icons8-high-importance-48.png'
+                                            )}
+                                    >
+
+                                    </Image>
+                                </View>
+                            </View>
+
+                        </TouchableOpacity >
+
+                        <TouchableOpacity onPress={() => this.playstore()}>
+                            <View>
+                                <View>
+                                <Text style={{position:"absolute",left:80,top:10,fontSize:22,color:"white"}}>
+                                        Rate App
+                                </Text>
+                                    <Image
+                                        style={{ width: 30,
+                                          height: 30,margin:10
+                                          }}
+                                        source={require
+                                            (
+                                                '../mainScreen/assets/icons8-topic-push-notification-48.png'
+                                            )}
+                                    >
+
+                                    </Image>
+                                </View>
+                            </View>
+
+                        </TouchableOpacity >
+                        </View>
+                        {/* </Content>                */}
+            </Container>
         </LinearGradient>
            
          

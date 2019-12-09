@@ -341,7 +341,7 @@ export default class tabOne extends Component {
           renderItem={({ item, index }) => (
             <View style={[styles.itemContainer, {}]}>
 
-              <TouchableOpacity onPress={() => this.playSound(item)}>
+              <TouchableOpacity onPress={() => this.navigateTomodal1(item)}>
                 <ImageBackground source={item.image} style={{ width: 110, height: 120 }} imageStyle={{ borderRadius: 5, resizeMode: "cover" }} >
 
                   <View style={{ width: 110, height: 25, backgroundColor: 'rgba(235, 109, 13, 0.5)', borderRadius: 5, justifyContent: "center", top: 95, }}>

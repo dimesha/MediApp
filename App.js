@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import main from './mainScreen/MainScreen';
 import testScreen from './testScreen/TestScreen';
 import newtest from './testScreen/Newonetest';
-import flashScreen from './flashScreen/FlashScreen'
+import flashScreen from './flashScreen/FlashScreen';
+import aboutusScreen from './sideScreen/Aboutus';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator, Header } from 'react-navigation-stack';
 import { View } from 'native-base';
@@ -26,6 +27,11 @@ Newonetest: {
 },
 FlashScreen: {
   screen: flashScreen,
+  navigationOptions: { header: null }
+
+},
+Aboutus: {
+  screen: aboutusScreen,
   navigationOptions: { header: null }
 
 },
