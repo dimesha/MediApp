@@ -108,7 +108,7 @@ export default class tabOne extends Component {
       demo: [],
       name: '',
       image: '',
-      url: ''
+      url: '',
     }
     this.sliderEditing = false;
   }
