@@ -60,7 +60,7 @@ this.props.navigation.navigate('Aboutus')
                                           }}
                                         source={require
                                             (
-                                                '../mainScreen/assets/icons8-high-importance-48.png'
+                                                '../mainScreen/assets/about.png'
                                             )}
                                     >
 
@@ -82,7 +82,7 @@ this.props.navigation.navigate('Aboutus')
                                           }}
                                         source={require
                                             (
-                                                '../mainScreen/assets/icons8-topic-push-notification-48.png'
+                                                '../mainScreen/assets/icons8-star-64.png'
                                             )}
                                     >
 
