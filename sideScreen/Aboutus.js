@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Drawer, Left, Icon, Body, Right } from 'native-base';
 import { Button, View, Text, StyleSheet,TouchableOpacity,TextInput,StatusBar,Image,Linking} from 'react-native';
-export default class App extends Component {
+export default class Aboutus extends Component {
     
     navigatechannel() {
          this.props.navigation.navigate('ChannelScreen')
@@ -17,7 +17,7 @@ export default class App extends Component {
 
                         <TouchableOpacity onPress={() => this.navigatechannel()} style={{width:50,height:50,marginTop:10}}>
 
-                            <Icon name='md-arrow-back' style={{ color: '#039be5' }} />
+                            {/* <Icon name='md-arrow-back' style={{ color: '#039be5' }} /> */}
 
                         </TouchableOpacity>
 
@@ -55,7 +55,7 @@ export default class App extends Component {
                     <Image
                         resizeMode='cover'
                         style={{ width: 200, height: 90, justifyContent: "center", alignItems: "center", top: 30 }}
-                        source={require('../mainScreen/assets/123.png')}
+                        source={require('../mainScreen/assets/comteclogo.png')}
                     />
 
 

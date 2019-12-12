@@ -96,7 +96,6 @@ export default class tabOne extends Component {
   // };
   constructor(props) {
     super(props);
-
     this.state = {
       isOpen: false,
       isDisabled: false,
@@ -115,7 +114,6 @@ export default class tabOne extends Component {
   componentDidMount() {
     console.disableYellowBox = true
     // this.play();
-
     this.timeout = setInterval(() => {
       if (this.sound && this.sound.isLoaded() && this.state.playState == 'playing' && !this.sliderEditing) {
         this.sound.getCurrentTime((seconds, isPlaying) => {

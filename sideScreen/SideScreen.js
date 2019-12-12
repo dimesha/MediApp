@@ -16,9 +16,6 @@ this.props.navigation.navigate('Aboutus')
     render() {
 
         return (
-           
-    
-       
         <LinearGradient
         colors={['#fff3e0','#ff6f00', '#ffc107','#ffd54f']}
         style={{flex: 1}}
